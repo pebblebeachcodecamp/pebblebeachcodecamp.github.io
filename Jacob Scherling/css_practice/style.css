@@ -1,0 +1,51 @@
+.redbox {
+   background-color: rgb(255, 0, 0);
+   color:   blue;
+   padding-left: ;
+   margin-left: ;
+}
+
+
+.yess {
+    background-color: silver;
+    color: gold;
+    padding: 299px ;
+    margin-top: ;
+}
+
+ 
+
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.redbox {
+    background-color: rgb(255, 0, 0);
+    color:   blue;
+    padding-left: ;
+    margin-left: ;
+ }
+ 
+ 
+ .yess {
+     background-color: silver;
+     color: gold;
+     padding: 299px ;
+     margin-top: ;
+ }
+ 
+  
+ 
+ 
+ .roboto-mono {
+   font-family: "Roboto Mono", monospace;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ }

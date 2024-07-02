@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. what is jordans favrite color? (hint, hex #0f0ceb)  </p>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="true">hex #0f0ceb</label>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">N/A</label>
+      
+
+        <input type="radio" name="question-1" value="...">
+        <label for="...">blue</label>
+    
+    </div>
+
+      <div>
+        <p>2. what is stupid?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p><a href="https://www.youtube.com/watch?v=kKW2IxrOuh4&pp=ygUNbWFuIHNjcmVhbWluZw%3D%3D">!press to view all of the answers!</a></p>
+
+        <pre>
+          <code>
+            function add(x, y) {
+              return x + y;
+            } (boring stuff)
+          </code>
+        </pre>
+
+        <input type="radio" name="question-3" value="5">
+        <label for="5">29</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="10">30</label>
+
+        <input type="radio" name="question-3" value="15">
+        <label for="15">15</label>
+      </div>
+
+      <div>
+        <p>4. who is da best</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="all">jordan</option>
+          <option value="hard"> conner</option>
+          <option value="language">invisible bob</option>
+          <option value="awesome"> </option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
