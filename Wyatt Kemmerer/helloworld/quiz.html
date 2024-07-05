@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz App</title>
+  <script src="quiz.js" defer></script>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+  <h1>Quiz App</h1>
+
+  <form id="quiz-form">
+    <div>
+      <p>1. Ragdoll cats are not social.</p>
+      <input type="radio" name="question-1" value="false">
+      <label for="true">false</label>
+
+      <input type="radio" name="question-1" value="false">
+      <label for="false">true</label>
+    </div>
+
+    <div>
+      <p>2. What are normally a ragdoll cat's colors?</p>
+      <input type="text" name="question-2">
+    </div>
+
+    <div>
+      <p>3. Which cat is a ragdoll cat?</p>
+
+      <label>
+        <input type="radio" name="question-3" value="ragdoll">
+        <img
+          src="https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/5b65b849-841f-4370-8030-95227c3d461e/ragdoll_cat_01401.jpg"
+          height="100">
+      </label>
+
+      <label>
+        <input type="radio" name="question-3" value="snowshoe">
+        <img src="https://media-be.chewy.com/wp-content/uploads/2023/07/03174102/Snowshoe-cat-breed-with-blue-eyes.jpg"
+          height="100" alt="">
+      </label>
+
+      <label>
+        <input type="radio" name="question-3" value="black">
+        <img
+          src="https://www.dailypaws.com/thmb/S80dKP95FUymOrFBybvxMSK0_Go=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/black-and-white-munchkin-cat-667587271-2000-0e458cff428b4c70a4db17bff4bd0d4f.jpg"
+          height="100">
+      </label>
+    </div>
+
+    <div>
+      <p>4. Ragdoll cats are _____</p>
+      <label for="question-4">Choose the correct option:</label>
+      <select name="question-4">
+        <option value="hairy">hairy</option>
+        <option value="weird">weird</option>
+        <option value="cute">cute</option>
+        <option value="bff">bff</option>
+      </select>
+    </div><p></p>
+
+    <div>
+      <p>5. Ragdoll cats can weigh up to______</p>
+      <label for="question-5">Choose the correct option:</label>
+      <select name="question-5" id="question-5">
+        <option value="2-7 pounds">2-7 pounds</option>
+        <option value="3-8 pounds">3-8 pounds</option>
+        <option value="5-10 pounds">5-10 pounds</option>
+        <option value="8-20 pounds">8-20 pounds</option>
+      </select>
+    </div><p></p>
+
+    <div>
+      <p>6. When a cat's tail is wagging, it usually means it's mad</p>
+      <input type="radio" name="question-6" value="true">
+      <label for="true">true</label>
+
+      <input type="radio" name="question-6" value="false">
+      <label for="false">false</label>
+    </div><p></p>
+
+    <div>
+      <p>7. Which cat is mad?</p>
+
+      <label>
+        <input type="radio" name="question-7" value="happy">
+        <img
+          src="https://i0.wp.com/dianaurban.com/wp-content/uploads/2017/07/01-cat-stretching-feet.gif?resize=500%2C399&ssl=1"
+          height="150">
+      </label>
+
+      <label>
+        <input type="radio" name="question-7" value="mad">
+        <img src="https://media.tenor.com/0dxTF2NW3zYAAAAM/cat-tail-wagging.gif" height="150" alt="">
+      </label>
+
+      <label>
+        <input type="radio" name="question-7" value="what">
+        <img
+          src="https://i.pinimg.com/originals/94/f0/65/94f0653d30bd368e5dfe492f0f60e01e.gif"
+          height="150">
+      </label> <p></p>
+    </div>
+    <div>
+      <p>8. Which cat is a kitten?</p>
+
+      <label>
+        <input type="radio" name="question-8" value="kitten">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tabby_Kitten_on_Blue_Throw.jpg/220px-Tabby_Kitten_on_Blue_Throw.jpg"
+          height="150">
+      </label>
+
+      <label>
+        <input type="radio" name="question-8" value="cute">
+        <img src="https://cdn.britannica.com/36/234736-050-4AC5B6D5/Scottish-fold-cat.jpg" height="110" alt="">
+      </label>
+
+      <label>
+        <input type="radio" name="question-8" value="also">
+        <img
+          src="https://media-be.chewy.com/wp-content/uploads/2019/10/28105544/catbehavior-HERO-1024x576.jpg"
+          height="100">
+      </label> <p></p>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+  <div id="results"></div>
+
+</body>
+
+</html>
