@@ -1,0 +1,86 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Dog styles */
+.dog {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust width here */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.dog h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dog-image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dog-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.toggle-description {
+    display: none; /* Hide description by default */
+    margin-bottom: 10px;
+}
+
+.show-description {
+    display: block; /* Show description when toggled */
+}
+
+.dog-description {
+    color: #333; /* Change description text color */
+}
+
+.dog-details {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.dog-details li {
+    margin-bottom: 5px;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
+}

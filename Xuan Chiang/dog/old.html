@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Information</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for dogs */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .dog {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .dog img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .dog h3 {
+            margin-top: 0;
+        }
+        .dog .toggle-description {
+            margin-bottom: 10px;
+        }
+        .dog .description {
+            display: none;
+            margin-top: 10px;
+        }
+        .dog .description.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dogs Information</h1>
+            <nav>
+                <ul>
+                    <li><a href="csspractice.html">Home</a></li>
+                    <li><a href="cats.html">Cats</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Featured Dogs</h2>
+        <section class="grid-container">
+            <div class="container">
+                <div class="dog">
+                    <div class="dog-info">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Labrador_on_Quantock_%282175262184%29.jpg/800px-Labrador_on_Quantock_%282175262184%29.jpg" alt="Labrador Retriever">
+                        <div class="dog-description">
+                            <h3>Labrador Retriever</h3>
+                            <p>The Labrador Retriever is a friendly, outgoing, and high-spirited dog breed.</p>
+                            <button class="toggle-description">Toggle Description</button>
+                            <div class="description">
+                                <p><strong>Average Age:</strong> 10-12 years</p>
+                                <p><strong>Height:</strong> 21-24 inches</p>
+                                <p><strong>Weight:</strong> 55-80 pounds</p>
+                                <p>Labradors excel as family pets, service dogs, and working dogs due to their versatile nature and trainable temperament.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="dog">
+                    <div class="dog-info">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg/220px-German_Shepherd_-_DSC_0346_%2810096362833%29.jpg" alt="German Shepherd">
+                        <div class="dog-description">
+                            <h3>German Shepherd</h3>
+                            <p>The German Shepherd is a courageous, confident, and highly intelligent dog breed.</p>
+                            <button class="toggle-description">Toggle Description</button>
+                            <div class="description">
+                                <p><strong>Average Age:</strong> 10-13 years</p>
+                                <p><strong>Height:</strong> 22-26 inches</p>
+                                <p><strong>Weight:</strong> 50-90 pounds</p>
+                                <p>German Shepherds are commonly used in police and military roles, as well as in search and rescue operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="dog">
+                    <div class="dog-info">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_Retriever_Dukedestiny01_drvd.jpg" alt="Golden Retriever">
+                        <div class="dog-description">
+                            <h3>Golden Retriever</h3>
+                            <p>The Golden Retriever is a friendly, tolerant, and intelligent dog breed.</p>
+                            <button class="toggle-description">Toggle Description</button>
+                            <div class="description">
+                                <p><strong>Average Age:</strong> 10-12 years</p>
+                                <p><strong>Height:</strong> 21-24 inches</p>
+                                <p><strong>Weight:</strong> 55-75 pounds</p>
+                                <p>Golden Retrievers are popular as family pets, therapy dogs, and in various dog sports due to their friendly and adaptable nature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cats & Dogs World. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Toggle Descriptions
+        const toggleButtons = document.querySelectorAll('.toggle-description');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const description = button.nextElementSibling;
+
+                // Toggle visibility of the description
+                description.classList.toggle('show');
+
+                // Change button text on toggle
+                button.textContent = description.classList.contains('show') ? 'Hide Description' : 'Toggle Description';
+            });
+        });
+    </script>
+
+</body>
+</html>
