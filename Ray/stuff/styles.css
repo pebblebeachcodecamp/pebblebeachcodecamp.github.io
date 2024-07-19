@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#cookie {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://img.freepik.com/premium-photo/cookies-isolated-white-background-ai-generative_921540-2483.jpg?size=626&ext=jpg&ga=GA1.1.697495140.1720803865&semt=ais_user');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#cookies, .auto-clicker {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.auto-clicker {
+    margin-top: 10px;
+}

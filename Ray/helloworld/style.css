@@ -1,0 +1,50 @@
+#button {
+    padding: 10px 20px;
+    background-color: #7cc99f;
+    color: white;
+    border: black;
+    cursor: pointer;
+    font-size: 50px;
+    border-radius: 10px;
+    animation: pulse 1s ease-in-out .5s infinite alternate;
+  }
+
+  #button:hover {
+    background-color: rgb(47, 205, 131);
+    animation: none;
+  }
+
+  .count {
+    font-size: xxx-large;
+  }
+
+  .container {
+    text-align: center;
+    padding: 100px;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #80f6b7 ,#c3f7d2);
+    height: 100vh;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+.center {
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+  
