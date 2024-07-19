@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <title>dodge.io</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="dodge_io.css">
+    </head>
+    <body class="pixelify-sans">
+        <img id="cloud" src="92472268da60310eb9b5738ae146deb2-removebg-preview.png">
+        <img id="cloud2" src="pixel-art-cloud-in-sky-removebg-preview.png">
+        <div id="mainTextContainer">
+            <h1 class="animate__animated animate__pulse animate__infinite">dodge.io</h1>
+            <a href="Choose_Difficulty.html" class="button">Start Dodging</a>
+            <a href="ball_stars.html" class="button">Play Another Game</a>
+            <a href="merchshop.html" class="button">Buy our Merch</a>
+        </div>
+
+        <script>
+            const audio = new Audio('mainmusic.mp3');
+            let audioPlaying = false; 
+            document.addEventListener('click', function() {
+                if(!audioPlaying) {
+                    audio.play()
+                }
+            })
+
+        </script>
+
+        <script>
+            let cloud1XPosition = 0;
+            let cloud1GoRight = true;
+            const cloud1 = document.getElementById('cloud')
+
+            setInterval(() => {
+                if(cloud1GoRight) {
+                    cloud1XPosition += 1;
+                } else {
+                    cloud1XPosition -= 1;
+                }
+
+                if(cloud1XPosition > 1000) {
+                    cloud1GoRight = false
+                }
+
+                if (cloud1XPosition < 1) {
+                    cloud1GoRight = true
+                }
+                cloud1.style.left = `${cloud1XPosition}px`;
+            }, 5)
+        </script>
+        <script>
+            let cloud2XPosition = 0;
+            let cloud2GoRight = true;
+            const cloud2 = document.getElementById('cloud2')
+
+            setInterval(() => {
+                if(cloud2GoRight) {
+                    cloud2XPosition += 1;
+                } else {
+                    cloud2XPosition -= 1;
+                }
+
+                if(cloud2XPosition > 1000) {
+                    cloud2GoRight = false
+                }
+
+                if (cloud2XPosition < 1) {
+                    cloud2GoRight = true
+                }
+                cloud2.style.left = `${cloud2XPosition}px`;
+            }, 10)
+        </script>
+        
+        <div class="lower-left">
+            <p>click anywhere on the screen</p>
+            <p>to turn on music</p>
+        </div>
+    </body> 
+</html>

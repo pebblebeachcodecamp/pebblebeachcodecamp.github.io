@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-image: url("https://media.istockphoto.com/id/1346119741/vector/vector-background-with-color-abstract-wave-dots.jpg?s=612x612&w=0&k=20&c=7lIA0ZrDzwp6HDrXyvgQLOrmATIy2o4bN8HBHoDH-G4=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button {
+    background-color: #b500fc;
+    font-size: 22.5px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    color:white;
+}
+
+.button:hover {
+    background-color: #713096;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.navbar {
+    padding: 20px;
+    background-color:#7f00ba;
+}
+
+h1 {
+    color:white
+}
+
+.centered-image {
+    padding-top: 30px;
+    text-align: center;
+}
+  

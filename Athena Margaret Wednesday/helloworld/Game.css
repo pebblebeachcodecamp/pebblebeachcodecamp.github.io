@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/06/28/19/89/360_F_628198974_t3XrQ03eTCM3Fcs7u0QNfm3JMhFB0YLw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lightcoral
+}
+
+.button {
+    background-color: #145580;
+    color:#eb2deb;
+    padding: 10px 15px;
+    border: 0;
+    border border-radius: 5px;
+    cursor: pointer;
+}
+
+.TP {
+    background-color: #145580;
+    color:#a6e1e5;
+    padding: 10px 15px;
+    border: 0;
+    border border-radius: 5px;
+}
+
+

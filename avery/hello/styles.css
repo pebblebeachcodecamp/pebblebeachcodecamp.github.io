@@ -1,0 +1,78 @@
+h1 { 
+    color: blue;   
+}
+
+marquee {
+color: mediumblue;
+} 
+
+h1 {
+   text-align: center; 
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+button {
+    color: gold;
+    background-color: black;
+}
+
+button {
+    height: 80px;
+    width: 90px;
+}
+
+button:hover {
+   background-color: crimson;
+}
+    
+body {
+    background-color: aliceblue; 
+}
+    
+
+h2 {
+    border-color: navy;
+}
+
+button {
+    box-shadow: 40px ;
+    text-align: center;
+
+}
+
+h1 {
+    text-shadow: 2px 2px 5px
+}
+
+button {
+    border-radius: 10px;
+}
+    
+button:active {
+    background-color: blue;
+}
+
+h1 {
+    border-style: solid;
+    border-radius: 30px;
+    border-color: black;
+}

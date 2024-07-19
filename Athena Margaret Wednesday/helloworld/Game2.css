@@ -1,0 +1,73 @@
+body {
+    background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/Screenshot03-1920x1080-8429b85aaa383be7c549090bd2acf5e5.jpg?resize=1&w=1920");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: purple;
+}
+    
+#trash1 {
+    position: absolute;
+    bottom: 40px;
+    left: 570px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#trash2{ 
+position: absolute;
+bottom: 140px;
+left: 4%;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+#trash3 {
+position: absolute;
+bottom: 120px;
+left:300px;
+border-bottom: 10px;
+border-radius: 10px;
+cursor:pointer ;
+
+}
+
+#trash4 {
+    position: absolute;
+    bottom: 60px;
+    left:870px;
+    border-bottom: 30px;
+    cursor:pointer ;
+    border-radius: 10px;
+   }
+
+   #trash5 {
+    position: absolute;
+    bottom: 90px;
+    left:800px;
+    border-radius: 10px;
+    border-bottom: 60px;
+    cursor:pointer ;
+   }
+
+   #trash6 {
+    position: absolute;
+    bottom: 40px;
+    left:920px;
+    border-radius: 10px;
+    border-bottom: 40px;
+    cursor:pointer ;
+   }
+
+   #trashcan {
+    position: absolute;
+    bottom: 40px;
+    left:920px;
+    border-radius: 10px;
+    border-bottom: 40px;
+    cursor:pointer ;
+   }
+
+   .score {
+    text-align: center;
+   }

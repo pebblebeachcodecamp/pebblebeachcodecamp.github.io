@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> Java Script Test </h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. JavaScript was invented in two weeks in May 1995.</p>
+<label for="question-1">Choose the correct option:</label>
+<select name="question-1">
+    <option value="Correct">incorrect</option>
+    <option value="Incorrect">correct</option>
+
+</select>
+      </div>
+
+      <div>
+        <p>2. What is the JavaScript code to print "Hello World" in the console?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. What is the output of the function add(5, 10)?</p>
+        <pre>
+          <code>
+            function add(x, y) {
+              return x + y;
+            }
+          </code>
+        </pre>
+
+        <input type="text" name="question-3" >
+
+        
+      </div>
+
+      <div>
+        <p>4. JavaScript is _____</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+         <option value="language">A programming language</option> 
+          <option value="awesome">Awesome</option>
+          <option value="hard">Hard</option>
+          <option value="hi">All of the above</option>
+          
+        </select>
+      </div>
+
+      <br>
+
+      <button id="Submit">submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>

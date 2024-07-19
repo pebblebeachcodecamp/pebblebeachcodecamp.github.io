@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <div id="circle" class="hidden"></div>
+        <button id="startButton">Start Game</button>
+    </div>
+    <script src="// script.js
+    let gameInterval;
+    let isPlaying = false;
+    
+    document.getElementById('startButton').addEventListener('click', startGame);
+    document.getElementById('circle').addEventListener('click', hitCircle);
+    
+    function startGame() {
+        if (isPlaying) return;
+    
+        isPlaying = true;
+        document.getElementById('startButton').classList.add('hidden');
+        document.getElementById('circle').classList.remove('hidden');
+    
+        gameInterval = setInterval(showCircle, 1000);
+    }
+    
+    function showCircle() {
+        const circle = document.getElementById('circle');
+        const gameArea = document.getElementById('game');
+        const gameAreaRect = gameArea.getBoundingClientRect();
+    
+        const x = Math.random() * (gameAreaRect.width - 50);
+        const y = Math.random() * (gameAreaRect.height - 50);
+    
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+    }
+    
+    function hitCircle() {
+        const circle = document.getElementById('circle');
+        circle.classList.add('hidden');
+        setTimeout(() => circle.classList.remove('hidden'), 500);
+    }
+    "></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="ball.css" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2D Shooting Game</title>
+   <style>
+       body { margin: 0; overflow: hidden; }
+       canvas { background: #fff5f5; display: block; }
+    
+    
+   </style>
+</head>
+<body>
+   <p style="text-align: center;">SHOOT</p>
+   <canvas id="gameCanvas"></canvas>
+   <script>
+       const canvas = document.getElementById('gameCanvas');
+       const ctx = canvas.getContext('2d');
+       canvas.width = window.innerWidth;
+       canvas.height = window.innerHeight;
+
+
+       const player1 = { x: 50, y: canvas.height / 2, color: 'blue', bullets: [] };
+       const player2 = { x: canvas.width - 50, y: canvas.height / 2, color: 'red', bullets: [] };
+
+
+       const bulletSpeed = 25;
+       const playerSpeed = 7;
+       const bulletSize = 10;
+       const playerSize = 20;
+       const bulletSizze = 10;
+       const bulletSpeeed = 15;
+
+
+       const keys = {};
+
+
+       window.addEventListener('keydown', (e) => keys[e.key] = true);
+       window.addEventListener('keyup', (e) => keys[e.key] = false);
+
+
+       function update() {
+           // Player 1 movement
+           if (keys['w']) player1.y -= playerSpeed;
+           if (keys['s']) player1.y += playerSpeed;
+           if (keys['a']) player1.x -= playerSpeed;
+           if (keys['d']) player1.x += playerSpeed;
+           if (keys['e']) player1.y -= playerSpeed;
+           if (keys['f']) player1.x += playerSpeed;
+          
+           // Player 2 movement
+           if (keys['ArrowUp']) player2.y -= playerSpeed;
+           if (keys['ArrowDown']) player2.y += playerSpeed;
+           if (keys['ArrowLeft']) player2.x -= playerSpeed;
+           if (keys['ArrowRight']) player2.x += playerSpeed;
+
+
+           // Player 1 shooting
+           if (keys[' ']) {
+               player1.bullets.push({ x: player1.x + playerSize / 2, y: player1.y, dx: bulletSpeed });
+               keys[' '] = false; // prevent continuous shooting
+           }
+           if (keys['c']) {
+               player1.bullets.push({ x: player1.x + playerSize / 2, y: player1.y, dx: bulletSizze });
+               keys['c'] = false; // prevent continuous shooting
+           }
+       
+           // Player 2 shooting
+           if (keys['Enter']) {
+               player2.bullets.push({ x: player2.x - playerSize / 2, y: player2.y, dx: -bulletSpeed });
+               keys['Enter'] = false; // prevent continuous shooting
+           }
+           if (keys[']']) {
+               player2.bullets.push({ x: player2.x - playerSize / 2, y: player2.y, dx: -bulletSizze });
+               keys[']'] = false; // prevent continuous shooting
+           }
+
+
+           // Move bullets
+           player1.bullets.forEach(bullet => bullet.x += bullet.dx);
+           player2.bullets.forEach(bullet => bullet.x += bullet.dx);
+
+
+           // Remove bullets that go off screen
+           player1.bullets = player1.bullets.filter(bullet => bullet.x < canvas.width);
+           player2.bullets = player2.bullets.filter(bullet => bullet.x > 0);
+
+
+           // Check for collisions
+           checkCollisions();
+       }
+
+
+       function checkCollisions() {
+           player1.bullets.forEach((bullet, bulletIndex) => {
+               if (bullet.x > player2.x - playerSize / 2 && bullet.x < player2.x + playerSize / 2 &&
+                   bullet.y > player2.y - playerSize / 2 && bullet.y < player2.y + playerSize / 2) {
+                   player1.bullets.splice(bulletIndex, 1);
+                   alert('Player 1 wins!');
+                   resetGame();
+               }
+           });
+
+
+           player2.bullets.forEach((bullet, bulletIndex) => {
+               if (bullet.x > player1.x - playerSize / 2 && bullet.x < player1.x + playerSize / 2 &&
+                   bullet.y > player1.y - playerSize / 2 && bullet.y < player1.y + playerSize / 2) {
+                   player2.bullets.splice(bulletIndex, 1);
+                   alert('Player 2 wins!');
+                   resetGame();
+               }
+           });
+       }
+
+
+       function resetGame() {
+           player1.x = 50;
+           player1.y = canvas.height / 2;
+           player2.x = canvas.width - 50;
+           player2.y = canvas.height / 2;
+           player1.bullets = [];
+           player2.bullets = [];
+       }
+
+
+       function draw() {
+           ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+           // Draw players
+           ctx.fillStyle = player1.color;
+           ctx.fillRect(player1.x - playerSize / 2, player1.y - playerSize / 2, playerSize, playerSize);
+           ctx.fillStyle = player2.color;
+           ctx.fillRect(player2.x - playerSize / 2, player2.y - playerSize / 2, playerSize, playerSize);
+
+
+           // Draw bullets
+           player1.bullets.forEach(bullet => {
+               ctx.fillStyle = 'black';
+               ctx.fillRect(bullet.x - bulletSize / 2, bullet.y - bulletSize / 2, bulletSize, bulletSize);
+           });
+           player2.bullets.forEach(bullet => {
+               ctx.fillStyle = 'black';
+               ctx.fillRect(bullet.x - bulletSize / 2, bullet.y - bulletSize / 2, bulletSize, bulletSize);
+           });
+       }
+
+
+       function gameLoop() {
+           update();
+           draw();
+           requestAnimationFrame(gameLoop);
+       }
+
+
+       gameLoop();
+   </script>
+</body>
+</html>

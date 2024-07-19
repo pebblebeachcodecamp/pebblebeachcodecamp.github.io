@@ -1,0 +1,102 @@
+.pixelify-sans {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('https://cdn.wallpapersafari.com/89/84/CWUkmX.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    margin: 0;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    text-shadow: 10px 15px grey;
+}
+
+
+#mainTextContainer {
+    position: flex;
+    flex-direction: column;
+    gap: 1;
+    text-align: center;
+}
+
+.button {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 22.5px;
+    padding: 15px;
+    padding-left: 10px;
+    border-radius: 30px;
+    border: none;
+    color:white;
+    width: 275px;
+    text-decoration: none;
+    display: block;
+}
+
+.button-green {
+    background-color: rgb(38, 255, 0);
+}
+
+.button-green:hover {
+    background-color: rgb(12, 112, 22);
+}
+
+.button-orange {
+    background-color: rgb(255, 238, 0);
+}
+
+.button-orange:hover {
+    background-color: rgb(177, 183, 0);
+}
+
+.button-red {
+    background-color: rgb(255, 51, 0);
+}
+
+.button-red:hover {
+    background-color: rgb(152, 0, 0);
+}
+
+
+.button2 {
+    margin-top: 15px;
+    background-color: rgb(255, 238, 0);
+    font-size: 22.5px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color:white;
+    width: 275px;
+    text-decoration: none;
+    display: block;
+}
+
+.button2:hover {
+    background-color: rgb(177, 183, 0);
+}
+
+.button3 {
+    margin-top: 15px;
+    background-color: rgb(255, 51, 0);
+    font-size: 22.5px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    color:white;
+    width: 275px;
+    text-decoration: none;
+    display: block;
+}
+
+.button3:hover {
+    background-color: rgb(152, 0, 0);   
+}

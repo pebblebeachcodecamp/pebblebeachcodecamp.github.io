@@ -1,0 +1,77 @@
+h1 {
+    color: rgba(64, 255, 0, 0.895);
+}
+h2 {
+    color: rgb(176, 29, 29);
+}
+h3{
+    text-align: center;
+}
+button{
+    color: rgb(44, 181, 171);
+}
+button{
+    background-color: blueviolet;
+}
+button{
+    height: 20px;
+}
+button{
+    font-size: 15px
+    ;
+}
+marquee {
+    color: rgb(255, 60, 0);
+}
+button{
+    border-radius: 10px;}
+
+button:hover {
+    background-color: black;
+}
+button:hover {
+cursor: grab;
+}
+body {
+    background-color: rgb(49, 49, 113)}
+    
+
+   
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+a:hover{
+    cursor: grab;
+}
+
+
+h1{
+    border-style:dotted
+}
+h1{
+    border:color(srgb rgb(255, 0, 0) rgb(26, 255, 1) blue);
+}
+button{
+    box-shadow: 56px;
+}
+h1{
+    text-shadow: 2px 2px 5px    red
+}
+ h2 {
+    text-shadow: 2px 2px 5px
+}
+  h2{ 
+   text-shadow: color(srgb redrgb(2, 171, 255) blue)
+  }  
+button:active{
+    background-color: mediumvioletred;
+}
+ h1{
+    font:italic  
+ }   ;

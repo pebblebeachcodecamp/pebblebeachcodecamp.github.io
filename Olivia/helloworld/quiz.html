@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="quiz.js" defer></script>
+      <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. (true or false) 17028392 + 1029375 + 1111111 = 19168878</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. What is 12 + 100 - 1000 - 50 - 1 + 102938?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. What is 1 * 2 * 3 * 4 * 5 * 6 * ... * 99 * 100?</p>
+
+        <input type="radio" name="question-3" value="1">
+        <label for="1">1</label>
+
+        <input type="radio" name="question-3" value="9.30291e+132">
+        <label for="9.30291e+132">9.30291e+132</label>
+
+        <input type="radio" name="question-3" value="9.332622e+157">
+        <label for="9.332622e+157">9.332622e+157</label>
+      </div>
+
+      <div>
+        <p>4. 1 + 1 = _____</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
+</html>

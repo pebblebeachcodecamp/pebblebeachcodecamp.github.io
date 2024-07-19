@@ -1,0 +1,13 @@
+.turtle {
+    height: 500px;
+} 
+
+body {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/05/85/34/35/1000_F_585343503_gDfhoQXWmTyNm4WW5Wpolf4mXHaRcODx.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image ter */
+    color: darkblue;
+}
+
+
