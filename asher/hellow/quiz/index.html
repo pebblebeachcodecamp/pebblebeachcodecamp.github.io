@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. x box was the first game console company</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. what is Satoshi Tanjiri's most successful game franchise. </p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. how many games have nintendo made.</p>
+        <pre>
+          
+        
+
+        <input type="radio" name="question-3" value="128">
+        <label for="128">128</label>
+
+        <input type="radio" name="question-3" value="394">
+        <label for="394">394</label>
+
+        <input type="radio" name="question-3" value="521">
+        <label for="521">521</label>
+      </div>
+
+      <div>
+        <p>4. the gaming system that uses multi-color lights the most is _____</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="play station">play station</option>
+          <option value="pc">pc</option>
+          <option value="nintendo">nintendo</option>
+          <option value="X box">X box</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+h1 {
+    color:rgb(18, 56, 226);
+}
+
+h2 {
+    color:blue;
+}
+
+p {
+    color:red;
+}
+
+.main-button {
+    background-color: rgb(221, 0, 255);
+    color: rgb(0, 42, 255);
+    font-size: 25px;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+  
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(134, 1, 167);
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+  
+.circle:hover {
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #b30000;
+}
+
+body {
+    background: rgb(255, 123, 0);
+}
+
+.container {
+    position: relative;
+  }
+  
+  .stickman {
+    width: 100px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .head, .body, .left-arm, .right-arm, .left-leg, .right-leg {
+    position: absolute;
+    background-color: black;
+  }
+  
+  .head {
+    top: 0;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .body {
+    top: 20px;
+    left: 40px;
+    width: 20px;
+    height: 60px;
+  }
+  
+  .left-arm {
+    top: 25px;
+    left: 20px;
+    width: 20px;
+    height: 40px;
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+  }
+  
+  .right-arm {
+    top: 25px;
+    left: 60px;
+    width: 20px;
+    height: 40px;
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
+  }
+  
+  .left-leg {
+    top: 80px;
+    left: 30px;
+    width: 20px;
+    height: 60px;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+  }
+  
+  .right-leg {
+    top: 80px;
+    left: 50px;
+    width: 20px;
+    height: 60px;
+    transform-origin: top left;
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
