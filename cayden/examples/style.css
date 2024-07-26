@@ -1,0 +1,7 @@
+h1{
+    color: red;
+}
+.gradient-vertical {
+    background: linear-gradient(to bottom, #4CAF50, #2196F3);
+  }
+  

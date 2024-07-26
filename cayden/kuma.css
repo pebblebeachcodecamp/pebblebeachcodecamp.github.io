@@ -1,0 +1,6 @@
+body{
+    background-color:azure;
+}
+.gradient-vertical {
+  background: linear-gradient(to bottom, #4CAF50, #2196F3);
+}

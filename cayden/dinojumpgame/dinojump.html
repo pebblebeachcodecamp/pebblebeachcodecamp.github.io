@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Jump Game</title>
+  <link rel="stylesheet" href="dinojump.css">
+</head>
+<body>
+  <div id="homeScreen">
+    <h1>Dino Jump</h1>
+    <button id="startButton" onclick="startGame()">Start Game</button>
+    <div id="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul id="scoreList"></ul>
+    </div>
+  </div>
+
+
+  <div id="gameContainer">
+    <div id="dino"></div>
+    <div id="obstacle"></div>
+    <div id="score">Score: 0</div>
+  </div>
+
+  <script src="dinojump.js"></script>
+  <script>
+    document.getElementById('startButton').addEventListener('click', startGame);
+  </script>
+</body>
+</html>

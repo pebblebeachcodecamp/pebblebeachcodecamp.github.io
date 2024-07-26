@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Cayden's Quiz</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. The Korean War started in 1950.</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. What is the name of the war fought in Europe and Asia?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3.How long did the Vietnam War last?</p>
+        <pre>
+          <code>
+            Hint, read my Vietnam War page.
+          </code>
+        </pre>
+
+        <input type="radio" name="question-3" value="100">
+        <label for="100">100</label>
+
+
+        <input type="radio" name="question-3" value="20">
+        <label for="20">20</label>
+      </div>
+
+      <div>
+        <p>4. My Website is _____</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="awesome">Awesome</option>
+          <option value="bad">It's Medicore </option>
+          <option value="medicore">It sucks</option>
+          <option value="not sure">I don't know</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
+</html>
