@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: blue;
+  }
+  
+  canvas {
+    display: block;
+    margin: auto;
+    background-color: yellow;
+    border: 10px solid #00ffff;
+  }
+  
