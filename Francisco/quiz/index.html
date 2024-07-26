@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>pacos Quiz </title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>pacos Quiz </h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. my name is marco  .</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. in what year china exist</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. What is 0 times 16439816492617219</p>
+        <pre>
+          <code>
+           0 x 1643718943647534983912873548714
+          </code>
+        </pre>
+
+        <input type="radio" name="question-3" value="5">
+        <label for="5">0</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="10">10</label>
+
+        <input type="radio" name="question-3" value="15">
+        <label for="15">1897437283918378658372493193274</label>
+      </div>
+
+      <div>
+        <p>4. kayden is  _____</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="awesome">awsome</option>
+          <option value="hard">bad guy </option>
+          <option value="language">a pro</option>
+          <option value="all">he bring his violin today yupppi</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
+</html>
