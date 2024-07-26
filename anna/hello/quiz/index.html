@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. There are two different breeds of Corgi.</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. what is the name of a famous corgi owner? </p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3.what were corgis Originally bred for?</p>
+
+        <input type="radio" name="question-3" value="emotional_support">
+        <label for="emotional_support">Emotional Support</label>
+
+        <input type="radio" name="question-3" value="guarding_the_house">
+        <label for="guarding_the_house">Guarding the house</label>
+
+        <input type="radio" name="question-3" value="watching_sheep">
+        <label for="watching_sheep">Watching sheep</label>
+      </div>
+
+      <div>
+        <p>4. Corgis are _________</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="awesome"> extremely fluffy</option>
+          <option value="hard">hard to control</option>
+          <option value="language">Magestic</option>
+          <option value="all">All of the above</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
+</html>

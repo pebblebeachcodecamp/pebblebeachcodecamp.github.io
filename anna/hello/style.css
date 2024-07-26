@@ -1,0 +1,104 @@
+h1 {
+    color:aqua;
+} 
+
+h2 { 
+    color:aquamarine; 
+} 
+
+h3 { 
+    color:black; 
+} 
+
+h4 { 
+    color:aquamarine;
+} 
+
+h4 { 
+    color:aqua;
+} 
+
+h5 { 
+    color:black;
+} 
+
+h6 { 
+    color:aquamarine;
+} 
+              
+.purple-circle {
+    height: 100px;
+    width: 100px;
+}
+
+
+.button:hover  {
+    background-color:springgreen;
+}
+  
+body {
+    background-color: #50c878;
+}
+
+.round-image {
+    border-radius: 44%;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.button {
+    background-color:darkblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: darkcyan;
+    text-decoration: none;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
