@@ -1,0 +1,10 @@
+.redbox {
+    background-color:skyblue;
+    color: rgb(255, 255, 255);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

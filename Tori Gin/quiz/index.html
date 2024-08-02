@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Javascript App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. Aberforth Dumbledore's patronus is a goat.</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. What does Sophie Foster from KOTLC first think of Biana?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. What is the output of the function add(5, 10)?</p>
+        <pre>
+          <code>
+            function add(x, y) {
+              return x + y;
+            }
+          </code>
+        </pre>
+
+        <input type="radio" name="question-3" value="5">
+        <label for="5">5</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="10">10</label>
+
+        <input type="radio" name="question-3" value="15">
+        <label for="15">15</label>
+      </div>
+
+      <div>
+        <p>4. The eight items for the wishing spell in the Land of stories are______________</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="awesome">Cinderella's glass slipper, Sleeping Beauty's spindle, Rapunzel's hair, Red Riding Hood's basket, the Little Mermaid's dagger, and Snow White's coffin.</option>
+          <option value="hard">The Fairy Godmother's wand, a heart made of pure gold, a bean from Jack an the Beanstalk, Goldilock's sword, a skibidi toilet, and more stuff</option>
+          <option value="language">Random Stuff, Boring stuff.</option>
+          <option value="all">All of the above</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>

@@ -1,0 +1,43 @@
+.bluebox {
+background-color: rgb(4, 64, 94);
+color:rgb(1, 199, 254);
+padding: 10px;
+height: 50px;
+}
+.blackbox {
+    background-color: black;
+    color:white;
+    padding: 10px;
+    height: 50px;
+}
+.greenbox {
+    background-color: green;
+    color:yellowgreen;
+    padding: 10px;
+    height: 50px;
+}
+.redbox {
+    background-color: red;
+    color-scheme:black;
+    padding: 10px;
+    height: 50px;
+}
+.tealbox {
+    background-color: aqua;
+    color:darkcyan;
+    padding: 10px;
+    height: 50px;
+}
+.skybluebox {
+    background-color: lightskyblue;
+    color: blueviolet;
+    padding: 10px;
+    height: 50px;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

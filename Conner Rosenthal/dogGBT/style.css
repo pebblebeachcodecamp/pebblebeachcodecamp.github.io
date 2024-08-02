@@ -1,0 +1,81 @@
+/* Container Styles */
+#container {
+    text-align: center;
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px black;
+  }
+  
+  /* Title Styles */
+  #title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  /* Prompt Styles */
+  #prompt {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* Button Styles */
+  #generate_button {
+    background-color: skyblue; /* Green background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Get the element to behave like a button */
+    font-size: 1.2em; /* Increase font size */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 10px; /* Add some margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #generate_button:hover {
+    background-color: darkcyan; /* Darker green */
+  }
+  
+  #generate_button:disabled {
+    background-color: #9E9E9E; /* Grey background */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+    opacity: 0.6; /* Slightly transparent */
+  }
+  
+  /* Output Styles */
+  #output {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: 'Comic Sans MS', sans-serif;
+  }

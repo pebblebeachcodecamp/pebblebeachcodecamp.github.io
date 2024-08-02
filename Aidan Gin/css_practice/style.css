@@ -1,0 +1,122 @@
+.redbox{
+    background-color : red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.scarletbox{
+    background-color : rgb(255, 72, 0);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.orangebox{
+    background-color : rgb(255, 140, 0);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.goldbox{
+    background-color : gold;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.yellowbox{
+    background-color : yellow;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.chartreusebox{
+    background-color : rgb(136, 255, 0);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.limebox{
+    background-color : lime;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.turquoisebox{
+    background-color : rgb(0, 255, 149);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.cyanbox{
+    background-color : cyan;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.skybox{
+    background-color : rgb(0, 179, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.bluebox{
+    background-color : rgb(0, 68, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.purplebox{
+    background-color : rgb(149, 0, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.orchidbox{
+    background-color : rgb(170, 0, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.magentabox{
+    background-color : rgb(255, 0, 208);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.pinkbox{
+    background-color : rgb(255, 133, 222);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 5px solid black;
+}
+.flex{
+    display: flex;
+}
+
+.space-10 {
+    gap: 10px;
+}
+.font   {
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}

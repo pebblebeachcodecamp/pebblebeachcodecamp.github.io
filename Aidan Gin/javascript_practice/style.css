@@ -1,0 +1,16 @@
+.redbox {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.font {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }

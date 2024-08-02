@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 0, 0);
+    margin: 0;
+    padding: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+  }
+  
+  form {
+    background-color: gold;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px  black (0, 0, 0, 0.1);
+  }
+  
+  pre {
+    display: block;
+    padding: 10px;
+    background-color: gold;
+    border-left: 3px solid red;
+    overflow-x: auto;
+  }
+  
+  code {
+    font-size: 1.2em;
+  }
+  
+  button {
+    background-color: rgb(0, 0, 0);
+    color: gold;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #results {
+    text-align: center;
+    font-size:  50px;
+  }

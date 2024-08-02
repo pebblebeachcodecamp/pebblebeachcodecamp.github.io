@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Random Trivia</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+      <!-- Font Import -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body class = "font">
+    <h1>Random Trivia</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. If x = 3, then 3x - 8 = -4x + 13.</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. The ___ is the part of Earth's atmosphere where weather happens.</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. Around what time did the Agricultural Age begin?</p>
+
+        <input type="radio" name="question-3" value="-3500">
+        <label for="-3500">Around 3500 BCE</label>
+
+        <input type="radio" name="question-3" value="-10000">
+        <label for="-10000">Around 10,000 BCE</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="10">Around 10 AD</label>
+
+        <input type="radio" name="question-3" value="500">
+        <label for="500">Around 500 AD</label>
+      </div>
+
+      <div class = "font">
+        <p>4. What continent is the country Paraguay located in? </p>
+        <label for="question-4">Select option:</label>
+        <select name="question-4">
+          <option value="north">North America</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="south">South America</option>
+          <option value="africa">Africa</option>
+        </select>
+      </div>
+
+      <div>
+        <p>5. How many stage(s) of mitosis are there? </p>
+
+        <input type="radio" name="question-5" value="1">
+        <label for="1">1 Stage</label>
+
+        <input type="radio" name="question-5" value="2">
+        <label for="2">2 Stages</label>
+
+        <input type="radio" name="question-5" value="3">
+        <label for="3">3 Stages</label>
+
+        <input type="radio" name="question-5" value="4">
+        <label for="4">4 Stages</label>
+      </div>
+
+      <div>
+        <p>6. What is the chemical formula for ozone?</p>
+
+        <input type="radio" name="question-6" value="O3N2">
+        <label for="O3N2">O3N2</label>
+
+        <input type="radio" name="question-6" value="K4">
+        <label for="K4">K4</label>
+
+        <input type="radio" name="question-6" value="K4O3">
+        <label for="K4O3">K4O3</label>
+
+        <input type="radio" name="question-6" value="O3">
+        <label for="O3">O3</label>
+      </div>
+
+      <div>
+        <p>7. What does glycolysis produce during cellular respiration?</p>
+
+        <input type="radio" name="question-7" value="Citric">
+        <label for="Citric">Citric Acid</label>
+
+        <input type="radio" name="question-7" value="Water">
+        <label for="Water">Water</label>
+
+        <input type="radio" name="question-7" value="Pyruvic">
+        <label for="Pyruvic">Pyruvic Acid</label>
+
+        <input type="radio" name="question-7" value="Glucose">
+        <label for="Glucose">Glucose</label>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>

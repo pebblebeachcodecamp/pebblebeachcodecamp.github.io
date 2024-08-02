@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DogGPT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="container">
+      <img src="logo.png" alt="DogGPT Logo" id="logo" height="50" width="50"/>
+      <h1 class = "specialfont">DogGPT</h1>
+      <p class = "specialfont">Ask me anything, but keep in mind that I'm a dog.</p>
+
+      <input type="text" id="prompt"  class = "specialfont" placeholder="Enter a prompt..." />
+      <button disabled type="submit" id="generate_button">Generate</button>
+
+      <div id="output"></div>
+    </div>
+  </body>
+</html>

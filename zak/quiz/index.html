@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Quiz App</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. am I an AI</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="true">True</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="false">False</label>
+      </div>
+
+      <div>
+        <p>2. what is my name</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. What is the answer of the world hardest question, not even Albert Einstein can solve it</p>
+        <pre>
+          <code>
+            2+3
+          </code>
+        </pre>
+
+        <input type="radio" name="question-3" value="5">
+        <label for="5">5</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="10">10</label>
+
+        <input type="radio" name="question-3" value="15">
+        <label for="15">15</label>
+      </div>
+
+      <div>
+        <p>4. what is my IQ</p>
+        <label for="question-4">Choose the correct number:</label>
+        <select name="question-4">
+          <option value="choose">choose</option>
+          <option value="1">1</option>
+          <option value="169">169</option>
+          <option value="5000">5,000</option>
+        </select>
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results">
+        <div id="resultText"></div>
+        <a href="https://youtu.be/bHb5CFGYz1A?si=Ss_nvmQm4BOVC7DG">FAILURE</a>
+    </div>
+  </body>
+</html>

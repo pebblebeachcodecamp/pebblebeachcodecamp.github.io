@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>49er Quiz</title>
+      <script src="app.js" defer></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>49er Quiz</h1>
+
+    <form id="quiz-form">
+      <div>
+        <p>1. What 49er player has been to the Pro Bowl 7 times on the 49ers?</p>
+
+        <input type="radio" name="question-1" value="true">
+        <label for="Rice">Jerry Rice</label>
+
+        <input type="radio" name="question-1" value="false">
+        <label for="Young">Steve Young</label>
+      </div>
+
+      <div>
+        <p>2. Who has the most rushing yards in 49er history?</p>
+        <input type="text" name="question-2">
+      </div>
+
+      <div>
+        <p>3. Who was the Super Bowl MVP for the 49ers against the chargers?</p>
+        
+
+        <input type="radio" name="question-3" value="5">
+        <label for="Rice">Jerry Rice</label>
+
+        <input type="radio" name="question-3" value="10">
+        <label for="Montana">Joe Montana</label>
+
+        <input type="radio" name="question-3" value="15">
+        <label for="Young">Steve Young</label>
+      </div>
+
+      <div>
+        <p>4. How many times have the 49ers won the NFC West?</p>
+        <label for="question-4">Choose the correct option:</label>
+        <select name="question-4">
+          <option value="7">7</option>
+          <option value="13">13</option>
+          <option value="16">16</option>
+          <option value="22">22</option>
+        </select>
+      </div>
+
+      <div>
+        <p>5. What is the 49ers record in the Super Bowl?</p>
+
+        <input type="radio" name="question-5" value="true">
+        <label for="4-3">4-3</label>
+
+        <input type="radio" name="question-5" value="false">
+        <label for="5-3">5-3</label>
+      </div>
+
+      <div>
+        <p>6. How many times have the 49ers got the 1 seed?</p>
+        <label for="question-6">Choose the correct option:</label>
+        <select name="question-6">
+          <option value="3">3</option>
+          <option value="7">7</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+
+      <div>
+        <p>7. What is the team name of the team the 49ers have beat twise in the Super Bowl
+        <input type="text" name="question-7">
+      </div>
+
+      <div>
+        <p>8. How many 49er players are in the Hall Of Fame?</p>
+        <label for="question-8">Choose the correct option:</label>
+        <select name="question-8">
+          <option value="29">29</option>
+          <option value="46">46</option>
+          <option value="35">35</option>
+          <option value="38">38</option>
+        </select>
+      </div>
+
+      <div>
+        <p>9. What was the first year the 49ers were a team
+        <input type="text" name="question-9">
+      </div>
+
+      <br>
+
+      <button id="submit">Submit</button>
+    </form>
+
+    <div id="results"></div>
+  </body>
